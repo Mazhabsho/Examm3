@@ -16,13 +16,20 @@ a{
     margin-bottom: 1rem;
 }
 .header{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    top: 0;
+    background-color: white;
+    padding: 5px;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 .navbar_left,.navbar_right{
  width: 18%;
@@ -45,11 +52,12 @@ a{
     font-size: 20px;
     color:#000;
     padding: 5px;
+    transition: all 0.7s ease;
 }
 .navbar_center ul li a:hover{
     background:#000;
     color: #19BCE4;
-    border-radius:5px;
+    border-radius:15px;
 }
 .navbar_left{
     display: flex;
@@ -92,12 +100,11 @@ border:none;
 
 /* container_menu */
 .container_menu{
-    background-image: url(../images/bgmain.png);
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/1xback.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 80vh;
-    background-color: #0005;
      margin-bottom: 5rem;
 }
 .menu_center{
